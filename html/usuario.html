@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuário - Projeto Pescar</title>
-    <link rel="stylesheet" href="usuario.css">
+    <link rel="stylesheet" href="../css/usuario.css">
 </head>
 <body>
     <div class="container">
@@ -15,12 +15,12 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="dashboard.html">Página inicial</a></li>
-                    <li><a href="estoque.html">Estoque</a></li>
-                    <li><a href="cadastrar-material.html">Cadastrar novo material</a></li>
-                    <li><a href="movimentacao.html">Movimentação</a></li>
-                    <li><a href="relatorio.html">Relatório</a></li>
-                    <li><a href="usuario.html">Usuário</a></li>
+                    <li><a href="../html/telainicial.html">Página inicial</a></li>
+                    <li><a href="../html/estoque.html">Estoque</a></li>
+                    <li><a href="../html/cadastrar-material.html">Cadastrar novo material</a></li>
+                    <li><a href="../html/movimentacao.html">Movimentação</a></li>
+                    <li><a href="../html/relatorio.html">Relatório</a></li>
+                    <li><a href="../html/usuario.html">Usuário</a></li>
                 </ul>
             </nav>
         </aside>
@@ -31,15 +31,15 @@
                 <h1>Usuário</h1>
             </header>
             <section class="user-form-container">
-                <form>
+                <form id="userForm">
                     <div class="form-group">
-                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="text" id="nome" placeholder="Nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="E-mail">
+                        <input type="email" id="email" placeholder="E-mail" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" id="senha" placeholder="Senha">
+                        <input type="password" id="senha" placeholder="Senha" required>
                     </div>
                     <div class="form-group">
                         <a href="#" class="change-password">Alterar a senha</a>
