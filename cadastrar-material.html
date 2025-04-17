@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Material - Projeto Pescar</title>
+    <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="#" alt="Logo Projeto Pescar">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="dashboard.html">Página inicial</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="cadastrar-material.html">Cadastrar novo material</a></li>
+                    <li><a href="movimentacao.html">Movimentação</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header>
+                <h1>Cadastrar Novo Material</h1>
+            </header>
+            <section class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="material">Nome do material</label>
+                        <input type="text" id="material" placeholder="Caderno">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data de Entrada</label>
+                        <input type="date" id="data" value="2025-03-12">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

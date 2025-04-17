@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Projeto Pescar</title>
+    <link rel="stylesheet" href="telainicial.html">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="#" alt="Logo Projeto Pescar">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="dashboard.html">Página inicial</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="cadastrar-material.html">Cadastrar novo material</a></li>
+                    <li><a href="movimentacao.html">Movimentação</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <header>
+                <h1>Página Inicial</h1>
+                <p>Visão Geral do Controle de Estoque</p>
+            </header>
+            <section class="cards">
+                <div class="card blue">
+                    <h3>4 Produtos Cadastrados</h3>
+                    <p>19 Itens no Estoque</p>
+                    <a href="#">Ver Relação de Produtos &gt;</a>
+                </div>
+                <div class="card red">
+                    <h3>2 Produtos Com Estoque Zerado</h3>
+                    <p>Zerado</p>
+                    <a href="#">Ver Produtos Estoque Zerado &gt;</a>
+                </div>
+                <div class="card yellow">
+                    <h3>3 Produtos Com Estoque Mínimo</h3>
+                    <p>Minímo</p>
+                    <a href="#">Ver Produtos Estoque Mínimo &gt;</a>
+                </div>
+            </section>
+            <section class="charts">
+                <div class="chart">
+                    <h3>Entradas e Saídas Últimos 10 Dias</h3>
+                    <canvas id="chartEntradasSaidas"></canvas>
+                </div>
+                <div class="chart">
+                    <h3>Atividades no Sistema Últimos 10 Dias</h3>
+                    <canvas id="chartAtividades"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Adicione o script do Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graficoDashboard.js"></script>
+</body>
+</html>
