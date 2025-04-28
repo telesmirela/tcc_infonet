@@ -21,6 +21,7 @@
                     <li><a href="../html/movimentacao.html">Movimentação</a></li>
                     <li><a href="../html/relatorio.html">Relatório</a></li>
                     <li><a href="../html/usuario.html">Usuário</a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>
                 </ul>
             </nav>
         </aside>
@@ -41,16 +42,15 @@
                     <div class="form-group">
                         <input type="password" id="senha" placeholder="Senha" required>
                     </div>
-                    <div class="form-group">
-                        <a href="#" class="change-password">Alterar a senha</a>
-                    </div>
                     <div class="form-buttons">
                         <button type="submit" class="add-user-button">Adicionar usuário</button>
                         <button type="button" class="exit-button">Sair</button>
                     </div>
+                    <div id="message" class="message"></div> <!-- Mensagem de feedback -->
                 </form>
             </section>
         </main>
     </div>
+    <script src="../js/usuario.js"></script>
 </body>
 </html>

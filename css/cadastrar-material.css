@@ -54,6 +54,11 @@ body {
     background-color: #2563EB;
 }
 
+.sidebar .menu ul li a.active {
+    background-color: #2563EB;
+    font-weight: bold;
+}
+
 /* Conteúdo Principal */
 .main-content {
     flex: 1;
@@ -73,23 +78,34 @@ body {
     color: #1E3A8A;
 }
 
-/* Formulário de Usuário */
-.user-form-container {
-    background-color: #F3F4F6;
-    border-radius: 15px;
-    padding: 30px 20px;
-    width: 400px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.main-content header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .form-group {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.form-group input {
-    width: 100%;
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #1E3A8A;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 300px;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -100,69 +116,54 @@ body {
     outline: none;
 }
 
-.form-group input::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: #1E3A8A;
 }
 
-.form-group input:-webkit-autofill {
-    background-color: #FBBF24 !important; /* Mantém o amarelo */
-    color: #1E3A8A !important; /* Mantém a cor do texto */
-    -webkit-box-shadow: 0 0 0px 1000px #FBBF24 inset !important; /* Remove o efeito de preenchimento automático */
-    transition: background-color 0s; /* Remove a transição */
+.form-group textarea {
+    resize: none;
+    height: 100px;
 }
 
-.form-group input:-webkit-autofill::first-line {
-    color: #1E3A8A !important; /* Garante que o texto também fique na cor correta */
+.form-actions {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin-top: 20px;
 }
 
-.change-password {
-    font-size: 14px;
-    color: #DC2626;
-    text-decoration: none;
-}
-
-.change-password:hover {
-    text-decoration: underline;
-}
-
-/* Botões */
-.form-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.add-user-button,
-.exit-button {
-    flex: 1;
-    padding: 10px;
+.submit-button {
+    background-color: #2563EB;
+    color: #fff;
     border: none;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: inline-block; /* Garante que o botão seja tratado como um elemento inline */
 }
 
-.add-user-button {
-    background-color: #2563EB;
-    color: #fff;
-}
-
-.add-user-button:hover {
+.submit-button:hover {
     background-color: #1D4ED8;
 }
 
-.exit-button {
-    background-color: #6B7280;
-    color: #fff;
-}
-
-.exit-button:hover {
-    background-color: #4B5563;
-}
-
-.message {
-    margin-top: 10px;
+/* Mensagem de feedback */
+#mensagem {
+    margin-top: 15px;
     font-size: 14px;
-    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Remove o estilo padrão do preenchimento automático do navegador */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #FBBF24 inset; /* Mantém o fundo amarelo */
+    box-shadow: 0 0 0px 1000px #FBBF24 inset; /* Para navegadores que não usam WebKit */
+    color: #1E3A8A; /* Mantém a cor do texto */
+}
+
+input:-webkit-autofill::first-line {
+    font-family: Arial, sans-serif; /* Garante que a fonte seja consistente */
+    font-size: 14px;
+    color: #1E3A8A;
 }

@@ -135,8 +135,31 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-align: center; /* Garante que o texto do botão esteja centralizado */
 }
 
 .submit-button:hover {
     background-color: #1D4ED8;
+}
+
+/* Botões */
+button {
+    background-color: #2563EB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1D4ED8;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: center;    /* Centraliza o botão verticalmente (se necessário) */
 }

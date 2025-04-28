@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque - Projeto Pescar</title>
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/estoque.css">
 </head>
 <body>
@@ -16,11 +17,12 @@
             <nav class="menu">
                 <ul>
                     <li><a href="../html/telainicial.html">Página inicial</a></li>
-                    <li><a href="../html/estoque.html">Estoque</a></li>
+                    <li><a href="../html/estoque.html" class="active">Estoque</a></li>
                     <li><a href="../html/cadastrar-material.html">Cadastrar novo material</a></li>
                     <li><a href="../html/movimentacao.html">Movimentação</a></li>
                     <li><a href="../html/relatorio.html">Relatório</a></li>
-                </ul>
+                    <li><a href="../html/usuario.html">Usuário</a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>                </ul>
             </nav>
         </aside>
 
@@ -30,49 +32,24 @@
                 <h1>Estoque</h1>
                 <p>Visão Geral do Controle de Estoque</p>
             </header>
-            <section class="actions">
-                <button class="update-button">Atualizar estoque</button>
-                <div class="search-bar">
-                    <input type="text" placeholder="Pesquisar">
-                    <button class="search-button">
-                        <img src="#" alt="Pesquisar">
-                    </button>
-                </div>
-            </section>
-            <section class="table-container">
-                <table>
+            <section>
+                <table border="1" id="tabela-estoque">
                     <thead>
                         <tr>
                             <th>Material</th>
-                            <th>Data</th>
+                            <th>Descrição</th>
                             <th>Quantidade</th>
+                            <th>Estoque Mínimo</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>aaaaaaaaaaaaaa</td>
-                            <td>xx/xx/xx</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>aaaaaaaaaaaaaa</td>
-                            <td>xx/xx/xx</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>aaaaaaaaaaaaaa</td>
-                            <td>xx/xx/xx</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>aaaaaaaaaaaaaa</td>
-                            <td>xx/xx/xx</td>
-                            <td>9</td>
-                        </tr>
+                        <!-- Os materiais serão carregados aqui -->
                     </tbody>
                 </table>
             </section>
         </main>
     </div>
+    <script src="../js/utils.js"></script>
+    <script src="../js/estoque.js"></script>
 </body>
 </html>
